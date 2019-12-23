@@ -1,0 +1,100 @@
+// main: ../style.less
+
+.about {
+    margin: 8.4rem 0;
+
+    @media @tablet {
+        margin: 4rem 0;
+    }
+}
+
+.about__inner {
+    display: flex;
+    max-width: 1090px;
+}
+
+.about__photo,
+.about__content {
+    width: 50%;
+
+    @media @tablet {
+        width: 100%;
+    }
+}
+
+.about__content {
+    padding-left: 3.2rem;
+    margin-top: 2rem;
+
+    @media @tablet {
+        padding-right: 3.2rem;
+    }
+}
+
+.about__photo {
+    position: relative;
+
+    img {
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
+    }
+
+    @media @tablet {
+        display: none;
+    }
+}
+
+.about__title {
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: @black;
+    font-weight: 700;
+
+    @media @notebook {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    @media @mobile {
+        font-size: 2rem;
+    }
+}
+
+.about__bigtitle {
+    margin-bottom: 1.4rem;
+    position: relative;
+    left: -10px;
+
+    text-transform: uppercase;
+    font-size: 6.1rem;
+    line-height: 1.1;
+    color: rgba(@black, 0.15);
+    font-weight: 700;
+
+    @media @notebook {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    @media @mobile {
+        font-size: 3rem;
+    }
+}
+
+.about__text {
+    margin-bottom: 2.8rem;
+
+    font-size: 0.8rem;
+    line-height: 2;
+    color: @gray;
+    font-weight: 300;
+}
+
+.about__footer {
+    @media @tablet {
+        display: flex;
+        justify-content: space-around;
+
+    }
+}
